@@ -18,7 +18,7 @@ const InterviewPractice = () => {
   
   const fetchQuestion = async () => {
     try {
-      const response = await fetch("http://localhost:8000/api/practice/question");
+      const response = await fetch("https://interview-mate-backend-delta.vercel.app/api/practice/question");
       if (!response.ok) throw new Error("Failed to fetch");
       const data = await response.json();
       setQuestion(data.ques || "Error fetching question");
@@ -37,7 +37,7 @@ const InterviewPractice = () => {
         const user = JSON.parse(userString);
         userEmail = user.email; 
       }
-      const res = await fetch("http://localhost:8000/api/practice/feedback", {
+      const res = await fetch("hhttps://interview-mate-backend-delta.vercel.app/api/practice/feedback", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ question, message, userEmail }),
