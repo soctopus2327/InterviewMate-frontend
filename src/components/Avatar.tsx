@@ -87,7 +87,7 @@
 // useGLTF.preload('models/67a0b4f6747ce2670d1491c7.glb')
 
 
-import React, { useEffect, useRef, useMemo } from "react";
+import { useEffect, useRef, useMemo } from "react";
 import { Group, AnimationClip, Object3D } from "three";
 import { useGraph, GroupProps } from "@react-three/fiber";
 import { useAnimations, useGLTF, useFBX } from "@react-three/drei";
