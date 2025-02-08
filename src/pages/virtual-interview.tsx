@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useRef } from "react";
 import { Canvas } from "@react-three/fiber";
 import HeaderImmerse from "../components/header-immerse";
 import { Experience } from "../components/Experience";
@@ -139,6 +139,7 @@ const VirtualInterview = () => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ userEmail }),
       });
+      console.log(res);
     }
   };
 
