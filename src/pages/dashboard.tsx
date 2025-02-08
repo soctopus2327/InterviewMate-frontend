@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useAuth } from '../context/AuthContext'; // Assuming you have an AuthContext for managing user state
 import Header from '../components/header';
 
