@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import HeaderImmerse from "../components/header-immerse";
 import { FaMicrophone } from "react-icons/fa";
 // import { FaStar, FaRegStar } from 'react-icons/fa';
